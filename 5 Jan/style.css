@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab&display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/* .bg {
+  width: 100vw;
+  height: 50vh;
+  background-color: #00CCAA;
+  position: absolute;
+} */
+main {
+  /* background-color: #00CCAA; */
+  background-image: linear-gradient(45deg, white 50%, #00CCAA 50%);
+  height: 100vh;
+}
+.container {
+  height: 100%;;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  display: flex;
+  width: 75vw;
+  height: 70vh;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card .left, .card .right {
+  flex: .5;
+}
+.left {
+  padding: 50px 45px;
+  background-image: url("https://iili.io/HR0Msbs.md.jpg");
+  background-size: cover;
+}
+.back-btn {
+  background-color: rgba(0,0,0, 0.2);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+}
+.back-img {
+  height: 40px;
+  cursor: pointer;
+}
+.right {
+  padding: 55px 50px;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+}
+.right-head {
+  display: inline-flex;
+}
+h1 {
+  font-family: 'Roboto Slab', serif;
+  color: #457B9D;
+}
+.bookmark-btn {
+  cursor: pointer;
+}
+.right-head img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.small-description {
+  font-family: 'Poppins', sans-serif;
+  margin-top: 10px;
+  color: #A9D6E5;
+}
+.description {
+  font-family: 'Poppins', sans-serif;
+  margin-top: 30px;
+  color: #1D3557;
+  height: 100%;
+  overflow: hidden;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 900px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    height: 70vh;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 900px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

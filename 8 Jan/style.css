@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Poppins', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #1e90ff;
+}
+a:hover {
+  text-decoration: underline;
+}
+p, h1, h4 {
+  cursor: default;
+}
+ul {
+  list-style: none;
+}
+article {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 900px;
+  max-width: 900px;
+  height: 540px;
+  padding: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.movie-category, .rating-score, li {
+  color: #1e90ff;
+}
+li {
+  font-size: small;
+}
+.rating {
+  color: gray;
+}
+.card-body {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 40px;
+}
+.poster {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.poster img {
+  width: 280px;
+}
+.info {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.actors {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.card-footer {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.buy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.buy button {
+  cursor: pointer;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 50px;
+  padding: 5px 40px;
+  margin-left: 7rem;
+}
+.trailer button {
+  cursor: pointer;
+  min-width: 200px;
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  padding: 5px 40px;
+}
+@media only screen and (max-width: 710px) {
+  .card {
+    width: 90%;
+    padding: 30px;
+    box-shadow: none;
+  }
+  .info {
+    grid-template-columns: auto;
+  }
+  .card-body {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto;
+    column-gap: 40px;
+  }
+  .poster {
+    text-align: center;
+  }
+  .poster img {
+    max-height: 400px;
+  }
+  .buy {
+    width: 100%;
+  }
+  .buy button {
+    margin-right: 1rem;
+  }
+}
