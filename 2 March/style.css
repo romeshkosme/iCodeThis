@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 900px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.switch {
+  background-color: lightblue;
+  height: 35px;
+  width: 90px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+}
+.circle {
+  height: 35px;
+  width: 35px;
+  border: 5px solid black;
+  box-sizing: border-box;
+  border-radius: 50px;
+  background-color: white;
+}
+.circle-on {
+    margin-left: auto;
+  /* animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; */
+}
+@keyframes slide-right {
+  0% {
+    margin: 0
+  }
+  100% {
+    margin-left: 0;
+  }
+}
